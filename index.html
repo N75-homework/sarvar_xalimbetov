@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CV rezume</title>
+</head>
+
+<body>
+    <div class="rezume">
+        <div class="rezume__box">
+            <div class="rezume__about">
+                <img class="rezume__ava" src="./ava.jpg" alt="cv_avatar">
+
+                <h4 class="rezume__contactText">ulanish</h4>
+                <hr class="rezume__line">
+                <ul class="rezume__list">
+                    <li class="rezume__item">
+                        <i style="margin-right: 10px;" class="fa-solid fa-location-dot"></i>
+                        <span id="address" class="rezume__span"></span>
+                    </li>
+                    <li class="rezume__item">
+                        <i style="margin-right: 10px;" class="fa-solid fa-envelope"></i>
+                        <span id="gmail" class="rezume__span"></span>
+                    </li>
+                    <li class="rezume__item">
+                        <i style="margin-right: 10px;" class="fa-solid fa-phone"></i>
+                        <span id="tel" class="rezume__span"></span>
+                    </li>
+                </ul>
+
+                <h4 class="rezume__contactText">Tillar</h4>
+                <hr class="rezume__line">
+                <ul class="rezume__list">
+                    <li class="rezume__item">
+                        Asosiy til:
+                        <span id="firstLan" class="rezume__span"></span>
+                    </li>
+                    <li class="rezume__item">
+                        Ikkinchi til:
+                        <span id="secondLan" class="rezume__span"></span>
+                    </li>
+                    <li class="rezume__item">
+                        Uchinchi til:
+                        <span id="thirdLan" class="rezume__span"></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="rezume__prof">
+                <div class="rezume__namebox">
+                    <h1 id="fullname" class="rezume__fullname"></h1>
+                    <hr class="rezume__line2">
+                    <p id="job" class="rezume__job"></p>
+                </div>
+                <div class="rezume__profAbout">
+                    <ul class="rezume__proflist">
+                        <li class="rezume__profitem">
+                            <h4 class="rezume__proftitle">profesional profile</h4>
+                            <p class="rezume__profdesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, doloremque a beatae neque officia eius necessitatibus rem totam vero fuga praesentium facilis aliquid odit fugiat, suscipit fugit atque. Voluptatem, fuga.</p>
+                        </li>
+                        <li class="rezume__profitem">
+                            <h4 class="rezume__proftitle">Ta'lim</h4>
+                            <span id="school"></span>
+                            <p class="school-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, porro!</p>
+
+                            <div class="university-div">
+                                <span id="universityName"></span>:
+                                <span id="university"></span>
+                            </div>
+                            <p class="university-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, impedit.</p>
+                        </li>
+                        <li class="rezume__profitem">
+                            <h4 class="rezume__proftitle">Ish tajribasi</h4>
+                            <div class="span__div">
+                                <span id="work"></span>:
+                                <span id="experience"></span>
+                            </div>
+                            <p class="work-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, soluta.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

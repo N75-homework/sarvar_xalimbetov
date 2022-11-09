@@ -1,0 +1,394 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+@media screen and (min-width: 425px) {
+    .rezume {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 750px;
+        background: linear-gradient(225deg, rgba(199, 142, 136, 1) 50%, rgba(60, 48, 48, 1) 50%);
+    }
+
+    .rezume__box {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        height: 90%;
+        background-color: #F5F4F5;
+        box-shadow: 1px 1px 3px #010101,
+            2px 2px 6px #010101,
+            3px 3px 9px #010101,
+            4px 4px 12px #010101,
+            5px 5px 15px #010101,
+            6px 6px 18px #010101;
+        margin: auto;
+        padding: 15px;
+    }
+
+    .rezume__about {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        background-color: #F5CECA;
+    }
+
+    .rezume__ava {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 20px auto 0;
+        border: 4px solid #f5f4f5;
+    }
+
+    .rezume__contactText {
+        font-size: 14px;
+        margin: 30px 0 0px 20px;
+        text-transform: uppercase;
+        text-align: start;
+        color: #3C3030;
+    }
+
+    .rezume__line {
+        width: 80%;
+        height: 1px;
+        background-color: #3C3030;
+    }
+
+    .rezume__list {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        margin: 10px 0 20px 20px;
+        gap: 10px;
+    }
+
+    .rezume__item,
+    .rezume__span {
+        font-size: 10px;
+        font-weight: 500;
+        color: #3C3030;
+    }
+
+    .rezume__prof {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 0;
+    }
+
+    .rezume__namebox {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 15%;
+        border: 3px solid #F5CECA;
+        border-left: 0px;
+    }
+
+    .rezume__fullname {
+        font-size: 15px;
+        margin: 25px auto 0;
+    }
+
+    .rezume__line2 {
+        font-size: 18px;
+        width: 15%;
+        height: 1px;
+        background-color: #3C3030;
+        margin: 10px auto;
+    }
+
+    .rezume__job {
+        font-size: 12px;
+        margin: 0 auto;
+    }
+
+    .rezume__profAbout {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90%;
+    }
+
+    .rezume__proflist {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 2px;
+        margin: 10px 0 0 20px;
+        gap: 20px;
+    }
+
+    .rezume__profitem {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .rezume__proftitle {
+        font-size: 10px;
+        margin: 0 0 10px 0;
+        padding: 5px;
+        border: 1px solid #F5CECA;
+        background-color: #F5CECA;
+        text-transform: uppercase;
+    }
+
+    .rezume__profdesc {
+        font-size: 10px;
+        margin: 0 0 10px 0;
+    }
+
+    #school {
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .school-desc {
+        font-size: 12px;
+        margin: 5px 0 20px 0;
+    }
+
+    .university-div {
+        display: flex;
+        font-weight: 700;
+        font-size: 12px;
+    }
+
+    #university{
+        font-size: 12px;
+    }
+
+    #universityName {
+        font-size: 12px;
+        margin-right: 5px;
+    }
+
+    .university-desc {
+        font-size: 12px;
+        margin: 5px 0 0 0;
+    }
+
+    .span__div {
+        display: flex;
+        font-weight: 700;
+        font-size: 12px;
+    }
+
+    #work {
+        font-size: 12px;
+        margin: 0 5px 0 0;
+    }
+
+    #experience{
+        font-size: 12px;
+    }
+
+    .work-desc{
+        font-size: 12px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .rezume {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 750px;
+        background: linear-gradient(225deg, rgba(199, 142, 136, 1) 50%, rgba(60, 48, 48, 1) 50%);
+    }
+
+    .rezume__box {
+        display: flex;
+        flex-direction: row;
+        width: 40%;
+        height: 90%;
+        background-color: #F5F4F5;
+        box-shadow: 1px 1px 3px #010101,
+            2px 2px 6px #010101,
+            3px 3px 9px #010101,
+            4px 4px 12px #010101,
+            5px 5px 15px #010101,
+            6px 6px 18px #010101;
+        margin: auto;
+        padding: 15px;
+    }
+
+    .rezume__about {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        height: 100%;
+        background-color: #F5CECA;
+    }
+
+    .rezume__ava {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: 20px auto 0;
+        border: 4px solid #f5f4f5;
+    }
+
+    .rezume__contactText {
+        font-size: 18px;
+        margin: 30px 0 0px 20px;
+        text-transform: uppercase;
+        text-align: start;
+        color: #3C3030;
+    }
+
+    .rezume__line {
+        width: 80%;
+        height: 1px;
+        background-color: #3C3030;
+    }
+
+    .rezume__list {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        margin: 10px 0 50px 20px;
+        gap: 10px;
+    }
+
+    .rezume__item,
+    .rezume__span {
+        font-size: 14px;
+        font-weight: 500;
+        color: #3C3030;
+    }
+
+    .rezume__prof {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        padding: 0;
+    }
+
+    .rezume__namebox {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 20%;
+        border: 3px solid #F5CECA;
+        border-left: 0px;
+    }
+
+    .rezume__fullname {
+        font-size: 26px;
+        margin: 35px auto 0;
+    }
+
+    .rezume__line2 {
+        font-size: 18px;
+        width: 15%;
+        height: 1px;
+        background-color: #3C3030;
+        margin: 10px auto;
+    }
+
+    .rezume__job {
+        font-size: 16px;
+        margin: 0 auto;
+    }
+
+    .rezume__profAbout {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 80%;
+    }
+
+    .rezume__proflist {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 10px;
+        margin: 10px 0 0 20px;
+        gap: 20px;
+    }
+
+    .rezume__profitem {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .rezume__proftitle {
+        font-size: 16px;
+        margin: 0 0 10px 0;
+        padding: 5px;
+        border: 1px solid #F5CECA;
+        background-color: #F5CECA;
+        text-transform: uppercase;
+    }
+
+    .rezume__profdesc {
+        font-size: 14px;
+        margin: 0 0 10px 0;
+    }
+
+    #school {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .school-desc {
+        font-size: 16px;
+        margin: 5px 0 20px 0;
+    }
+
+    .university-div {
+        display: flex;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    #university{
+        font-size: 16px;
+    }
+
+    #universityName {
+        font-size: 16px;
+        margin-right: 5px;
+    }
+
+    .university-desc {
+        font-size: 16px;
+        margin: 5px 0 0 0;
+    }
+
+    .span__div {
+        display: flex;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    #work {
+        font-size: 16px;
+        margin: 0 5px 0 0;
+    }
+
+    #experience{
+        font-size: 16px;
+    }
+
+    .work-desc{
+        font-size: 16px;
+        font-size: 16px;
+    }
+}
