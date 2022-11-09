@@ -5,7 +5,7 @@ body {
     font-family: sans-serif;
 }
 
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 320px) {
     .rezume {
         display: flex;
         margin: 0;
@@ -72,7 +72,7 @@ body {
 
     .rezume__item,
     .rezume__span {
-        font-size: 10px;
+        font-size: 8px;
         font-weight: 500;
         color: #3C3030;
     }
@@ -94,8 +94,8 @@ body {
     }
 
     .rezume__fullname {
-        font-size: 15px;
-        margin: 25px auto 0;
+        font-size: 11px;
+        margin: 30px auto 0;
     }
 
     .rezume__line2 {
@@ -103,7 +103,7 @@ body {
         width: 15%;
         height: 1px;
         background-color: #3C3030;
-        margin: 10px auto;
+        margin: 5px auto;
     }
 
     .rezume__job {
@@ -135,7 +135,7 @@ body {
     }
 
     .rezume__proftitle {
-        font-size: 10px;
+        font-size: 8px;
         margin: 0 0 10px 0;
         padding: 5px;
         border: 1px solid #F5CECA;
@@ -144,58 +144,57 @@ body {
     }
 
     .rezume__profdesc {
-        font-size: 10px;
+        font-size: 8px;
         margin: 0 0 10px 0;
     }
 
     #school {
-        font-size: 12px;
+        font-size: 10px;
         font-weight: 700;
     }
 
     .school-desc {
-        font-size: 12px;
+        font-size: 10px;
         margin: 5px 0 20px 0;
     }
 
     .university-div {
         display: flex;
         font-weight: 700;
-        font-size: 12px;
+        font-size: 10px;
     }
 
     #university{
-        font-size: 12px;
+        font-size: 10px;
     }
 
     #universityName {
-        font-size: 12px;
+        font-size: 10px;
         margin-right: 5px;
     }
 
     .university-desc {
-        font-size: 12px;
+        font-size: 10px;
         margin: 5px 0 0 0;
     }
 
     .span__div {
         display: flex;
         font-weight: 700;
-        font-size: 12px;
+        font-size: 10px;
     }
 
     #work {
-        font-size: 12px;
+        font-size: 10px;
         margin: 0 5px 0 0;
     }
 
     #experience{
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .work-desc{
-        font-size: 12px;
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 
