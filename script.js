@@ -18,6 +18,12 @@ var $percent4 = document.querySelector('#precent-4');
 var $percent5 = document.querySelector('#precent-5');
 var $percent6 = document.querySelector('#precent-6');
 var $profil_ava = document.querySelector(".profil_ava");
+var $n1 = document.querySelector("#n1")
+var $n2 = document.querySelector("#n2")
+var $n3 = document.querySelector("#n3")
+var $n4 = document.querySelector("#n4")
+var $n5 = document.querySelector("#n5")
+var $n6 = document.querySelector("#n6")
 
 var $resume = document.querySelector('#resume')
 var $form = document.getElementById('form')
@@ -42,6 +48,12 @@ $form.addEventListener('submit', e => {
     $profil_ava.innerHTML = `
         <img src=${inputLink.value.trim()} alt="" class="profil_photo">
     `
+    $percent1.style.width = `${$n1.value}%`
+    $percent2.style.width = `${$n2.value}%`
+    $percent3.style.width = `${$n3.value}%`
+    $percent4.style.width = `${$n4.value}%`
+    $percent5.style.width = `${$n5.value}%`
+    $percent6.style.width = `${$n6.value}%`
 
     $resume.style.display = 'flex'
     $resume.style.backgroundColor = 'transparent'
