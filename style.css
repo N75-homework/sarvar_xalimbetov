@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Sora&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+}
+.container{
+    width: 50%;
+    background: #fcffff;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.title{
+    font-size: 52px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    color: #e421d7;
+}
+.wrapper{
+    width: 100%;
+    padding: 0 5px;
+    border: 2px solid #00aeff;
+    cursor: pointer;
+    border-radius: 50px;
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+    font-size: 18px;
+    color: #1f5c9a;
+    transition: all .5s ease-in;
+}
+.icon{
+    margin: 0 10px;
+    width: 30px;
+    height: 30px;
+    background: url('./plus_icon.png') no-repeat 8px 7px #00aeff;
+    background-size: 18px;
+    background-position: center;
+    border-radius: 50%;
+    float: left;
+    transition: all .5s ease-in;
+}
+.move{
+    width: 80%;
+    padding: 0 15px;
+    border-left: 1px solid #00aeff;
+    margin-left: 25px;
+    text-align: justify;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .5s ease-in;
+}
+.desc{
+    font-size: 18px;
+    color: #1f5c9a;
+    letter-spacing: 2px;
+}
+.active{
+    background-color: #00aeff;
+    color: #fff;
+}
+.active .icon{
+    margin: 0 10px;
+    width: 30px;
+    height: 30px;
+    background: url('./minus_icon.png') no-repeat 8px 7px #fff;
+    background-size: 18px;
+    background-position: center;
+    border-radius: 50%;
+    float: left;
+    transition: all .5s ease-in;
+}
+
+@media screen and (max-width: 426px){
+    .container{
+        width: 80%;
+        margin-top: 30px;
+    }
+    .title{
+        font-size: 18px;
+    }
+    .wrapper h4{
+        font-size: 14px;
+    }
+    .desc{
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+}
