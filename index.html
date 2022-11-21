@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone number</title>
+
+    <style>
+        body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: sans-serif;
+        }
+
+        form {
+            display: flex;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        label {
+            padding: 10px;
+            border: 1px solid transparent;
+            background-color: #00ddff;
+            color: #fff;
+            font-size: 22px;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+
+        input {
+            width: 300px;
+            height: 35px;
+            padding: 5px;
+            margin: 0;
+            outline: none;
+            border: 2px solid #00ddff;
+            font-size: 24px;
+            color: #00ddff;
+        }
+
+        button {
+            position: absolute;
+            top: 70px;
+            width: 385px;
+            height: 30px;
+            background-color: #49e6fe;
+            border: 1px solid #00ddff;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1ddaf7;
+        }
+
+        button:active {
+            background-color: #00bcd9;
+        }
+
+        h1 {
+            position: absolute;
+            top: 600px;
+            font-size: 32px;
+        }
+
+        @media screen and (max-width: 426px) {
+
+            h1 {
+                font-size: 25px;
+                top: 430px;
+            }
+        }
+
+        @media screen and (max-width: 376px) {
+            input {
+                width: 250px;
+            }
+
+            button {
+                width: 335px;
+            }
+
+            h1 {
+                font-size: 18px;
+                top: 420px;
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+
+            input {
+                width: 200px;
+            }
+
+            button {
+                width: 285px;
+            }
+
+            h1 {
+                font-size: 18px;
+                top: 420px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form">
+        <label>+998</label>
+        <input type="tel" name="tel" id="input" minlength="9" maxlength="12" placeholder="9X XXX XX XX" required>
+        <button id="btn">Send</button>
+    </form>
+    <h1 id="text"></h1>
+
+
+
+    <script>
+        let $input = document.getElementById('input');
+        let $form = document.getElementById('form');
+        let $text = document.getElementById('text');
+
+        $form.addEventListener('submit', e => {
+            e.preventDefault()
+            var telNum = $input.value.split('');
+            var telSymbol;
+
+            if (telNum.length === 12) {
+                telSymbol = telNum[0] + telNum[1] + telNum[3] + telNum[4] + telNum[5]
+                var result = telSymbol.padEnd(9, "#")
+                $text.textContent = `Telefon raqam: +998${result}`
+            } else if (telNum.length === 9) {
+                telSymbol = telNum[0] + telNum[1] + telNum[2] + telNum[3] + telNum[4]
+                var result = telSymbol.padEnd(9, "#")
+                $text.textContent = `Telefon raqam: +998${result}`
+            }
+            $input.value = null
+
+        })
+    </script>
+</body>
+
+</html>
