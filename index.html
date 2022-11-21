@@ -141,11 +141,17 @@
 
         $form.addEventListener('submit', e => {
             e.preventDefault()
-
             var telNum = $input.value.split('');
-            var telSymbol = telNum[0] + telNum[1] + telNum[2] + telNum[3] + telNum[4]
-            var result = telSymbol.padEnd(9, "#")
-            $text.textContent = `Telefon raqam: +998${result}`
+            var telCode = telNum[0]+telNum[1]
+
+            if(telCode == 33 || telCode == 55 || telCode == 61 || telCode == 62 || telCode == 65 || telCode == 66 || telCode == 67 || telCode == 69 || telCode == 70 || telCode == 71 || telCode == 72 || telCode == 73 || telCode == 74 || telCode == 75 || telCode == 76 || telCode == 77 || telCode == 78 || telCode == 79 || telCode == 88 || telCode == 90 || telCode == 91 || telCode == 92 || telCode == 93 || telCode == 94 || telCode == 95 || telCode == 96 || telCode == 97 || telCode == 98 || telCode == 99) {
+                var telSymbol = telNum[0] + telNum[1] + telNum[2] + telNum[3] + telNum[4]
+                var result = telSymbol.padEnd(9, "#")
+                $text.textContent = `Telefon raqam: +998${result}`
+            } else{
+                $text.textContent = `Telefon kodini noto'g'ri kiritdingiz!`
+            }
+
 
             $input.value = null
         })
