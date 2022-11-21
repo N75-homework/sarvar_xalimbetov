@@ -21,9 +21,10 @@ for (let i = 0; i < array.length; i++) {
 
     if (isNaN(array[i])) {
         stringArray.push(array[i])
-        $arrayString.textContent = stringArray.sort()
     } else {
         numberArray.push(array[i])
-        $arrayNumber.textContent = numberArray.sort((a, b) => a - b);
     }
 }
+
+alert(`[${stringArray.sort()}]`)
+alert(`[${numberArray.sort((a, b) => a - b)}]`)
