@@ -127,7 +127,7 @@
 <body>
     <form id="form">
         <label>+998</label>
-        <input type="tel" name="tel" id="input" minlength="9" maxlength="12" placeholder="9X XXX XX XX" required>
+        <input type="number" name="tel" id="input" min="330000000" max="999999999" placeholder="9XXXXXXXX" required>
         <button id="btn">Send</button>
     </form>
     <h1 id="text"></h1>
@@ -141,20 +141,13 @@
 
         $form.addEventListener('submit', e => {
             e.preventDefault()
+
             var telNum = $input.value.split('');
-            var telSymbol;
+            var telSymbol = telNum[0] + telNum[1] + telNum[2] + telNum[3] + telNum[4]
+            var result = telSymbol.padEnd(9, "#")
+            $text.textContent = `Telefon raqam: +998${result}`
 
-            if (telNum.length === 12) {
-                telSymbol = telNum[0] + telNum[1] + telNum[3] + telNum[4] + telNum[5]
-                var result = telSymbol.padEnd(9, "#")
-                $text.textContent = `Telefon raqam: +998${result}`
-            } else if (telNum.length === 9) {
-                telSymbol = telNum[0] + telNum[1] + telNum[2] + telNum[3] + telNum[4]
-                var result = telSymbol.padEnd(9, "#")
-                $text.textContent = `Telefon raqam: +998${result}`
-            }
             $input.value = null
-
         })
     </script>
 </body>
