@@ -1,3 +1,4 @@
+let $check = document.querySelector('.check')
 let $userForm = document.getElementById('user_form')
 let $userName = document.getElementById('user_name')
 let $userTel = document.getElementById('user_number')
@@ -116,6 +117,8 @@ let getUserFunc = function(array, element){
 
 $userForm.addEventListener('submit', e => {
     e.preventDefault()
+
+    $check.style.display = 'flex'
     
     let getUserInfo = {
         id: userInfoBox.length + 1,
