@@ -22,7 +22,7 @@ let price = 0
 
 let getThickness = (array, element) => {
     for(let i = 0; i < array.length; i++){
-        element.innerHTML = `Dough thickness: ${array.name}`
+        element.innerHTML = `Dough thickness: ${array[i].value}`
     }
 
     
