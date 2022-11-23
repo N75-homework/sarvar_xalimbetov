@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3132/3132693.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./scss/style.css">
+    <title>Pizza</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="pizza__title">Pizza order</h1>
+
+        <div class="box">
+
+            <div class="order">
+                <form class="order__form">
+                    <div class="order__thicknessLabel">
+
+                        <h3 class="order__text">Dough thickness</h3>
+                        <select name="dough_thickness" id="order-select" class="order__thickness">
+                            <option value="10" name="thin">Thin</option>
+                            <option value="12" name="medium">Medium</option>
+                            <option value="15" name="thick">Thick</option>
+                        </select>
+
+                    </div>
+
+                    <div class="order__size">
+                        <h3 class="order__sizeText">Size: </h3>
+
+                        <input value="25sm" type="radio" name="radio-size" id="small-size" class="order__radio">
+                        <label for="small-size" class="order__radioLabel">25sm</label>
+
+                        <input value="30sm" type="radio" name="radio-size" id="normal-size" class="order__radio">
+                        <label for="normal-size" class="order__radioLabel">30sm</label>
+
+                        <input value="35sm" type="radio" name="radio-size" id="big-size" class="order__radio">
+                        <label for="big-size" class="order__radioLabel">35sm</label>
+                    </div>
+
+                    <div class="order__onPizza">
+                        <h3 class="order__onPizzaText">What do you want to put on the pizza?</h3>
+
+
+                        <div class="order__checkboxForm">
+                            <div class="order__formBox">
+                                <input type="checkbox" name="tomato" value="tomato" class="order__checkbox"
+                                    id="order__tomato">
+                                <label for="order__tomato" class="order__checkboxLabel">Tomato</label>
+                            </div>
+
+                            <div class="order__formBox">
+                                <input type="checkbox" name="turkey_meat" value="turkey meat" class="order__checkbox"
+                                    id="order__turkeyMeat">
+                                <label for="order__turkeyMeat" class="order__checkboxLabel">Turkey Meat</label>
+                            </div>
+
+                            <div class="order__formBox">
+                                <input type="checkbox" name="olive" value="olive" class="order__checkbox"
+                                    id="order__olive">
+                                <label for="order__olive" class="order__checkboxLabel">Olive</label>
+                            </div>
+
+                            <div class="order__formBox">
+                                <input type="checkbox" name="cucumber" value="pickled cucumber" class="order__checkbox"
+                                    id="order__cucumber">
+                                <label for="order__cucumber" class="order__checkboxLabel">Pickled Cucumber</label>
+                            </div>
+
+                            <div class="order__formBox">
+                                <input type="checkbox" name="mushroom" value="mushroom" class="order__checkbox"
+                                    id="order__mushroom">
+                                <label for="order__mushroom" class="order__checkboxLabel">Mushroom</label>
+                            </div>
+
+                            <div class="order__formBox">
+                                <input type="checkbox" name="horse_meat" value="horse meat" class="order__checkbox"
+                                    id="order__horseMeat">
+                                <label for="order__horseMeat" class="order__checkboxLabel">Horse Meat</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="order__extra">
+                        <h3 class="order__extraText">You'll want to add more toppings on top of the pizza?</h3>
+
+
+                        <div class="order__extraForm">
+                            <div class="order__extraBox">
+                                <input type="checkbox" name="pepper" value="pepper" class="order__extra-checkbox"
+                                    id="order__pepper">
+                                <label for="order__pepper" class="order__extraLabel">Pepper</label>
+                            </div>
+
+                            <div class="order__extraBox">
+                                <input type="checkbox" name="sausage" value="sausage" class="order__extra-checkbox"
+                                    id="order__sausage">
+                                <label for="order__sausage" class="order__extraLabel">Sausage</label>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+            <div class="user">
+                <form class="user__informationForm" id="user_form">
+
+                    <label class="user__label user__name">
+                        <span class="user__icon user__iconName">
+                            <i class="fa-solid fa-user fa-2xl"></i>
+                        </span>
+
+                        <input type="text" name="user_name" placeholder="fullname" minlength="3" class="user__style" id="user_name" required>
+                    </label>
+
+                    <label class="user__label user__number">
+                        <span class="user__icon user__iconNum">
+                            <i class="fa-solid fa-phone fa-2xl"></i>
+                        </span>
+
+                        <input type="number" name="user_number" placeholder="phone number" min="330000000" max="999999999" class="user__style" id="user_number" required>
+                    </label>
+
+                    <label class="user__label user__address">
+                        <span class="user__icon user__iconAddress">
+                            <i class="fa-solid fa-location-dot fa-2xl"></i>
+                        </span>
+
+                        <input type="text" name="user_address" placeholder="address" minlength="3" class="user__style" id="user_address" required>
+                    </label>
+
+                    <button class="btn" id="btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="check">
+        <h1 class="check__title">Receipt</h1>
+        <p class="check__text">CONTACT</p>
+        <ul class="check__list"></ul>
+        <p class="check__text">SALE</p>
+        <ul class="check__list" id="order_list">
+            <li id="thickness">Dough thickness: </li>
+            <li id="size_item">Size: </li>
+            <li>On Pizza: <span id="on_pizza"></span></li>
+            <li>Extra: <span id="extra"></span></li>
+        </ul>
+        <span class="check__price">
+            <h4>TOTAL: </h4>
+            <h5 id="total_price">0$</h5>
+        </span>
+
+        <img src="./images/CashBack.svg" alt="CashBack" class="check__cashback">
+        <span class="check__cashbackDesc">Get CashBack</span>
+    </div>
+
+
+
+    <!----------------------------------------script Link-------------------------------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+        integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

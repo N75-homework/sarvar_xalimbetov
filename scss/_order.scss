@@ -1,0 +1,180 @@
+.order {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin: 20px 0 30px 20px;
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(30px);
+    box-shadow: inset 0 0 0 500px rgba(194, 201, 157, 0.3);
+
+    &__thicknessLabel {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        display: flex;
+    }
+
+    &__text {
+        font-size: 18px;
+        font-weight: 600;
+        color: #251B37;
+        margin: 0 20px 0 0;
+    }
+
+    &__thickness {
+        font-size: 20px;
+        color: #251B37;
+        width: 20%;
+        height: 40px;
+        border: 2px solid #01a7cc;
+        background-color: transparent;
+        backdrop-filter: blur(50px);
+        box-shadow: inset 0 0 0 50px rgba(1, 167, 204, 0.28);
+        outline: none;
+    }
+
+    &__size {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    &__sizeText {
+        font-size: 22px;
+        font-weight: 600;
+        color: #251B37;
+        margin: 0 50px 0 0;
+    }
+
+    &__radio[type='radio'] {
+        display: none;
+    }
+
+    &__radioLabel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        border: 2px solid #01a7cc;
+        border-radius: 50%;
+        margin-right: 30px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 900;
+        background: transparent;
+        backdrop-filter: blur(20px);
+        box-shadow: inset 0 0 0 100px rgba(1, 167, 204, 0.34);
+        transition: all .25s ease-in;
+        cursor: pointer;
+    }
+
+    &__radio[type='radio']:checked+&__radioLabel {
+        background: transparent;
+        backdrop-filter: blur(20px);
+        box-shadow: inset 0 0 0 100px rgba(1, 167, 204, 0.8);
+        color: #fff;
+        border: 2px solid #fff;
+    }
+
+
+    &__onPizza {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    &__onPizzaText {
+        font-size: 20px;
+        font-weight: 600;
+        color: #251B37;
+        margin: 0;
+    }
+
+    &__checkboxForm {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 70%;
+        height: 100px;
+        margin-top: 15px;
+        gap: 10px;
+    }
+
+    &__formBox {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__checkbox {
+        width: 20px;
+        height: 20px;
+        margin: 0 10px 0 0;
+    }
+
+    &__checkboxLabel {
+        display: flex;
+        align-items: baseline;
+        font-size: 18px;
+        font-weight: 600;
+        margin: -3px 0 0 0;
+    }
+
+
+    &__extra {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    &__extraText {
+        font-size: 20px;
+        font-weight: 600;
+        color: #251B37;
+        margin: 0;
+    }
+
+    &__extraForm {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 70%;
+        height: 100px;
+        margin-top: 15px;
+        gap: 200px;
+    }
+
+    &__extraBox {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__extra-checkbox {
+        width: 20px;
+        height: 20px;
+        margin: 0 10px 0 0;
+    }
+
+    &__extraLabel {
+        display: flex;
+        align-items: baseline;
+        font-size: 18px;
+        font-weight: 600;
+        margin: -3px 0 0 0;
+    }
+}
