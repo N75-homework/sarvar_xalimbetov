@@ -593,7 +593,7 @@ $selectGenre.addEventListener('change', e => {
 
 		} else {
 			var $item = document.createElement('li')
-			$item.innerHTML = null
+			$item.style.display = 'none'
 		}
 
 
