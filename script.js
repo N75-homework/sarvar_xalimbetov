@@ -549,7 +549,7 @@ $icon.addEventListener('click', e => {
 				`
 		} else {
 			var $item = document.createElement('li')
-			$item.innerHTML = null
+			$item.style.display = 'none'
 		}
 
 		$list.append($item)
