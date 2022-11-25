@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root{
+    --pink: rgb(255, 0, 200);
+}
+::selection{
+    background-color: yellow;
+    color: var(--pink);
+}
+
+body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background: rgba(0,0,0)
+}
+.root{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.title{
+    font-size: 54px;
+    color: var(--pink);
+    margin: 0 auto;
+}
+.line{
+    box-sizing: border-box;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}
+.form{
+    display: flex;
+    position: relative;
+    width: 70%;
+    margin: 10px auto;
+    gap: 5%;
+}
+.input{
+    box-sizing: border-box;
+    width: 30%;
+    height: 30px;
+    outline: none;
+    background-color: #000;
+    border: 0px solid transparent;
+    border-bottom: 1px solid rgba(255, 0, 200, 0.6);
+    box-shadow: 0 0 0px var(--pink);
+    padding: 5px 20px;
+    font-size: 18px;
+    color: var(--pink);
+}
+.input:hover{
+    box-shadow: -3px 3px 8px var(--pink);
+    border-bottom: 1px solid var(--pink);
+    border-left: 1px solid var(--pink);
+}
+.input:focus{
+    box-shadow: -3px 3px 8px var(--pink);
+    border-bottom: 1px solid var(--pink);
+    border-left: 1px solid var(--pink);
+}
+.input::placeholder{
+    font-size: 16px;
+    font-weight: 100;
+    color: rgba(255, 0, 200, 0.6)
+}
+.icon{
+    position: absolute;
+    top: -1.5px;
+    left: 27.2%;
+    color: var(--pink);
+    width: 3%;
+    height: 31px;
+    padding: 0 5px;
+    background-color: var(--pink);
+    color: black;
+    cursor: pointer;
+}
+.icon:hover{
+    color: aqua;
+}
+.input:hover ~ .icon{
+    color: var(--pink);
+    background-color: transparent;
+}
+.input:focus ~ .icon{
+    color: var(--pink);
+    background-color: transparent;
+}
+
+.genre_select{
+    width: 30%;
+    height: 30px;
+    outline: none;
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 1px solid var(--pink);
+    color: var(--pink);
+    padding: 0 5px;
+    font-size: 18px;
+}
+.genre_select:hover{
+    box-shadow: -3px 3px 8px var(--pink);
+    border-bottom: 1px solid var(--pink);
+    border-left: 1px solid var(--pink);
+}
+.genre_select:focus{
+    box-shadow: -3px 3px 8px var(--pink);
+    border-bottom: 1px solid var(--pink);
+}
+
+.filt_select{
+    width: 30%;
+    height: 30px;
+    outline: none;
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 1px solid var(--pink);
+    color: var(--pink);
+    padding: 0 5px;
+    font-size: 18px;
+}
+.filt_select:hover{
+    box-shadow: -3px 3px 8px var(--pink);
+    border-bottom: 1px solid var(--pink);
+    border-left: 1px solid var(--pink);
+}
+.filt_select:focus{
+    box-shadow: -3px 3px 8px var(--pink);
+    border-bottom: 1px solid var(--pink);
+}
+
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 20px auto;
+    padding: 0;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 22%;
+    height: 600px;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid var(--pink);
+    border-radius: 10px;
+    background-color: rgb(30, 30, 30);
+    transition: all .5s ease-in-out;
+}
+.item:hover{
+    box-shadow: -2px -2px 20px var(--pink);
+}
+.poster{
+    width: 100%;
+    height: 65%;
+    margin: 0 auto;
+}
+.subtitle{
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    margin: 30px auto 50px;
+}
+.desc{
+    font-size: 22px;
+    color: #fff;
+    font-weight: normal;
+    margin: 5px auto;
+}
+.btn{
+    width: 40%;
+    height: 30px;
+    margin: 15px auto 10px;
+    border: 1px solid var(--pink);
+    border-radius: 10px;
+    background-color: transparent;
+    color: var(--pink);
+    cursor: pointer;
+    transition: all .5s ease-in;
+}
+.btn:hover{
+    border-radius: 0;
+    background-color: var(--pink);
+    color: #fff;
+    box-shadow: 0px 0px 30px var(--pink);
+}
+.btn:active{
+    background-color: rgba(255, 0, 200, 0.6);
+    transition: 0s;
+}
