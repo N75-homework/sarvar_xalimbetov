@@ -315,7 +315,18 @@ body{
     transition: all .5s ease-in-out;
 }
     
-@media screen and (max-width: 320px){
+@media screen and (max-width: 768px){
+    .item{
+        width: 44%;
+    }
+    .icon{
+        left: 25%;
+        width: 5%;
+        border: 0px;
+    }
+}
+
+@media screen and (max-width: 426px){
     .form{
         display: flex;
         flex-direction: column;
@@ -342,7 +353,19 @@ body{
     .list{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
+    .item{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 376px){
+    .item{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 320px){
     .item{
         width: 90%;
     }
