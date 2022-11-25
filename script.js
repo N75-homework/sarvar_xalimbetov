@@ -530,7 +530,7 @@ films.forEach((item) => {
 
 // <----------------- Icon addEventListener --------------->
 
-$icon.addEventListener('click', e => {
+$input.addEventListener('keyup', e => {
 	e.preventDefault()
 	$list.innerHTML = null
 	console.log($list);
@@ -553,6 +553,20 @@ $icon.addEventListener('click', e => {
 		}
 
 		$list.append($item)
+	})
+})
+
+$icon.addEventListener('click', e => {
+	films.forEach(item => {
+		var $item = document.createElement('li')
+			$item.className = 'item'
+
+			$item.innerHTML = `
+                <img class="poster" src=${item.Poster} alt="img">
+                <h5 class="subtitle">${item.Title}</h5>
+                <p class="desc">19.1.1970</p>
+                <button class="btn">Show more</button>
+			`
 	})
 })
 
