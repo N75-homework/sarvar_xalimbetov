@@ -508,7 +508,7 @@ $input.addEventListener('keyup', e => {
 			$item.innerHTML = `
                 <img class="poster" src=${item.Poster} alt="img">
                 <h5 class="subtitle">${item.Title}</h5>
-                <p class="desc">19.1.1970</p>
+                <p class="desc">${release(item.Year)}</p>
                 <button class="btn">Show more</button>
 				`
 		} else {
