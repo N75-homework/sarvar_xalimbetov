@@ -1,4 +1,6 @@
-*{
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,7 +8,8 @@
     list-style: none;
     text-decoration: none;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
     display: flex;
@@ -14,127 +17,203 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
+    background: linear-gradient(90deg, rgba(123, 224, 216, 1) 0%, rgba(170, 193, 255, 1) 100%);
+    font-family: 'Roboto', sans-serif;
 }
-.hidden{
+
+button,
+a,
+.item{
+    cursor: pointer;
+}
+
+.hidden {
     display: none;
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 35%;
+    width: 30%;
     margin: 0 auto;
     margin-top: 20px;
 }
-.title{
+
+.title {
+    font-family: 'Roboto', sans-serif;
     font-size: 48px;
-    color: rgb(0, 132, 255);
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgb(34, 255, 251);
     margin: 30px auto 10px;
 }
-.subtitle{
+
+.subtitle {
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 40px;
 }
-.subtitle a{
+
+.subtitle a {
     font-size: 16px;
     text-decoration: underline;
     color: rgb(0, 132, 255);
     font-weight: 100;
 }
-.form{
+
+.form {
     display: flex;
-    flex-direction: column;
     align-items: flex-end;
-    width: 100%;
-    gap: 5px;
+    width: 80%;
+    gap: 15px;
 }
-.todo_input{
-    width: 90%;
+
+.todo_input {
+    width: 95%;
     margin: 0 auto;
     padding-left: 10px;
     height: 30px;
     outline: none;
-    border: 1px solid #a1a1a1;
+    border: 1px solid transparent;
     border-radius: 5px;
 }
-.todo_input:hover{
-    transition: all .5s ease-in-out;
-    background-color: rgb(242, 250, 255);
-}
-.todo_input:focus{
-    transition: all .5s ease-in-out;
-    background-color: rgb(242, 250, 255);
-}
-.todo_btn{
-    width: 10%;
-    height: 30px;
+
+.todo_btn {
+    width: 15%;
+    height: 29px;
     background-color: rgb(0, 106, 255);
-    border: 1px solid;
+    border: 1px solid transparent;
     border-radius: 5px;
     color: white;
     font-size: 14px;
     cursor: pointer;
-    margin-right: 26px;
     margin-top: 5px;
+    transition: all .4s;
 }
-.todo_btn:hover{
-    transition: all .5s;
+
+.todo_btn:hover {
     background-color: transparent;
     color: rgb(0, 106, 255);
     font-weight: 600;
-    border: 1px solid rgba(0, 106, 255, 1);
-    box-shadow: 0px 0px 0px 4px rgba(0, 106, 255, 0.5);
-}
-.list{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 30px;
-}
-.item{
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-    position: relative;
-    width: 90%;
-    border: 1px solid;
-    margin: 0 auto;
-    border: 1px solid #a1a1a1;
-    border-radius: 5px;
-    padding: 5px;
-    cursor: pointer;
-    padding-left: 10px;
-    margin-top: 10px;
-}
-.item-text{
-    width: 50%;
-    margin: auto 0;
-}
-.icon{
-    display: flex;
-    justify-content: end;
-    gap: 10px;
-    width: 50%;
-    cursor: pointer;
-}
-.icon-1{
-    color: rgb(0, 255, 76);
-    position: absolute;
-    right: 31px;
-    top: 7px;
-}
-.icon-2{
-    color: rgb(169, 0, 0);
-    position: absolute;
-    top: 7px;
-    right: 10px;
-    width: 15px;
-    height: 15px;
+    border: 2px solid rgba(0, 106, 255, 1);
 }
 
-.background{
+.sorting_box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 85%;
+    height: 40px;
+    margin-top: 30px;
+}
+.sorting_btn{
+    width: 30%;
+    height: 30px;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    transition: all .5s;
+}
+.sorting_all{
+    background-color: #fff;
+    color: #000;
+}
+.sorting_all:hover{
+    border: 2px solid;
+    color: #fff;
+    font-weight: 600;
+    background-color: transparent;
+}
+.sorting_check{
+    background-color: #27C86A;
+}
+.sorting_check:hover{
+    background-color: transparent;
+    border: 2px solid #27C86A;
+    font-weight: 600;
+    color: #10b957;
+}
+.sorting_del{
+    background-color: #c82727;
+}
+.sorting_del:hover{
+    background-color: transparent;
+    border: 2px solid #c82727;
+    font-weight: 600;
+    color: #c82727;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 30px;
+}
+
+.item {
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    border: 0px solid transparent;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.completed{
+    display: flex;
+    position: relative;
+    left: 6px;
+    top: 6.5px;
+}
+.checked{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #27C86A;
+    transition: all .5s;
+}
+.checked_input{
+    position: absolute;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    opacity: 0.001;
+    cursor: pointer;    
+}
+.checked_input:checked ~ .checked{
+    border: 0px solid transparent;
+    background-color: #27C86A;
+    border-radius: 50%;
+    transform: rotate(180deg);
+}
+
+
+.item-text {
+    width: 80%;
+    margin: 7px 0 7px 20px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    gap: 10px;
+    width: 10%;
+    height: 100%;
+    margin: auto 0;
+    margin-left: 5px;
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+}
+
+.background {
     position: absolute;
     top: 0;
     left: 0;
@@ -143,7 +222,8 @@ body{
     background-color: rgba(0, 0, 0, 0.4);
     border: 1px solid;
 }
-.modal{
+
+.modal {
     position: absolute;
     top: 80%;
     z-index: 1;
@@ -153,22 +233,26 @@ body{
     border: 1px solid transparent;
     border-radius: 5px;
 }
-.up-part{
+
+.up-part {
     width: 100%;
     height: 30px;
     background-color: rgba(0, 0, 0, 0.1);
     padding: 6px 10px;
 }
-.close-icon{
+
+.close-icon {
     margin-left: 140px;
     cursor: pointer;
 }
-.down-part{
+
+.down-part {
     display: flex;
     flex-direction: column;
     padding-top: 20px;
 }
-.edit_input{
+
+.edit_input {
     width: 90%;
     height: 25px;
     margin: 0 auto;
@@ -177,11 +261,13 @@ body{
     border-radius: 3px;
     margin-bottom: 20px;
 }
-.edit_input:hover{
+
+.edit_input:hover {
     transition: all .5s;
     box-shadow: 0 0 0 2px rgba(52, 177, 255, 0.4);
 }
-.edit_btn{
+
+.edit_btn {
     width: 100px;
     height: 30px;
     margin-left: 190px;
@@ -192,10 +278,38 @@ body{
     color: #fff;
     cursor: pointer;
 }
-.edit_btn:hover{
+
+.edit_btn:hover {
     transition: all .5s;
     background-color: #fff;
     color: rgb(53, 255, 188);
     border: 2px solid rgb(53, 255, 188);
     font-weight: 700;
+}
+
+@media screen and (max-width: 426px){
+    .container{
+        width: 90%;
+    }
+    .form{
+        width: 90%;
+        gap: 5px;
+    }
+    .todo_input{
+        width: 80%;
+    }
+    .todo_btn{
+        width: 15%;
+    }
+    .sorting_box{
+        width: 95%;
+    }
+    .sorting_btn{
+        font-size: 14px;
+    }
+
+    .list{
+        width: 100%;
+        font-size: 14px;
+    }
 }

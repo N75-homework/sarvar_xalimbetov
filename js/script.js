@@ -14,13 +14,16 @@ let todos = JSON.parse(localStorage.getItem('list')) ? JSON.parse(localStorage.g
 function setValue(){
     
     $list.innerHTML += `
-        <li class="item">
-            <span class="item-text">${input}</span>
-            <div class="icon">
-                <i class="fa-solid fa-square-check icon-1"></i>
-                <i class="fa-solid fa-trash fa-lg icon-2"></i>
-            </div>
-        </li>
+    <li class="item">
+        <div class="completed">
+            <input type="checkbox" class="checked_input">
+            <div class="checked"></div>
+        </div>
+        <span class="item-text">Lorem ipsum dolor sit amet con</span>
+        <div class="icon">
+            <i class="fa-solid fa-trash fa-lg icon-2"></i>
+        </div>
+    </li>
     `
 }
 

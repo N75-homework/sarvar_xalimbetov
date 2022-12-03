@@ -18,11 +18,17 @@
         <p class="subtitle">by <a target="_blank" href="https://sarvar_3708.t.me">Sarvar Xalimbetov</a></p>
 
         <form class="form" id="form">
-            <input type="text" id="todo_input" class="todo_input" placeholder="Type mission...">
+            <input type="text" id="todo_input" class="todo_input" maxlength="30" placeholder="Type mission...">
             <button class="todo_btn" id="add_btn">Add</button>
         </form>
 
-        <ul id="list" class="list"> </ul>
+        <div class="sorting_box">
+            <button class="sorting_btn sorting_all">All</button>
+            <button class="sorting_btn sorting_check">Completed</button>
+            <button class="sorting_btn sorting_del">Deleted</button>
+        </div>
+        
+        <ul id="list" class="list"></ul>
 
     </div>
 
