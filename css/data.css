@@ -1,0 +1,99 @@
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 965px;
+    left: 29.3%;
+    top: 36.9%;
+    
+}
+.item{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: baseline;
+    align-items: baseline;
+    width: 100%;
+    padding: 10px 0;
+}
+.item:nth-child(odd){
+    background-color: #F3F2F3;
+}
+.number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    width: 6%;
+}
+.title{
+    font-size: 20px;
+    width: 30%;
+    padding: 5px 0;
+    padding-left: 10px;
+}
+.date{
+    width: 10%;
+    text-align: center;
+}
+.mark{
+    width: 10%;
+    text-align: center;
+    margin-left: 106px;
+    background-color: transparent;
+}
+.status{
+    width: 8%;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    background-color: #2F9668;
+    color: white;
+    text-align: center;
+    margin-left: 20px;
+}
+.edit{
+    width: 5%;
+    padding: 10px 0;
+    margin-left: 40px;
+    color: #76787E;
+    background-color: transparent;
+    border: 1px solid #76787E;
+    transition: all .5s ease-in-out;
+}
+.edit:hover{
+    background-color: #76787E;
+    color: #fff;
+}
+.del{
+    width: 5%;
+    padding: 10px 0;
+    margin-left: 55px;
+    color: #D22143;
+    background-color: transparent;
+    border: 1px solid #D22143;
+    transition: all .5s ease-in-out;
+}
+.del:hover{
+    background-color: #D22143;
+    color: #fff;
+}
+
+.error{
+    visibility: hidden;
+    position: absolute;
+    top: 300px;
+    left: 500px;
+    width: 833px;
+}
+
+.modal{
+    position: fixed;
+    top: 20%;
+    left: 0;
+}
