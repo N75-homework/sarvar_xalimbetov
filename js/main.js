@@ -8,6 +8,7 @@ const _editModal = document.getElementById('edit-student-modal')
 const _addDataModal = document.getElementById('add-student-modal')
 const _status = document.getElementById('status')
 const _count = document.querySelector('.count')
+const _totalMark = document.querySelector('.text-end')
 
 let date = new Date()
 const realDate = `${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()}`
@@ -22,15 +23,14 @@ async function data() {
         const body = await response.json()
         return body
     } catch (error) {
-        console.log(error.message);
+        addData(students)
     }
 }
 
 data()
     .then((data) => addData(data) )
     .catch((error) => {
-        console.log(error.message);
-        _error.style.visibility = 'visible'
+        addData(students)
     })
 
 
@@ -45,6 +45,8 @@ function countMark(mark) {
 }
 
 function addData(info) {
+    _count.innerHTML = `Count: ${info.length}`
+
 
     return info.forEach((item) => {
         _list.innerHTML += `
@@ -53,7 +55,7 @@ function addData(info) {
             <h1 class="title">${item.name} ${item.lastName}</h1>
             <p class="date">${realDate}</p>
             <span class="mark">${countMark(item.mark)}</span>
-            <p class="status" id="status">${item.mark >= 90 ? 'Pass' : 'Fail'}</p>
+            <p class="status" id="status">${item.mark > 90 ? 'Pass' : 'Fail'}</p>
             <button class="edit" onclick="editData(${item.id})">
                 <i class="fa-solid fa-pen"></i>
             </button>
@@ -143,3 +145,4 @@ async function editData(id) {
 _closeBtn.addEventListener('click', () =>{
     _editModal.style.display = 'none'
 })
+
