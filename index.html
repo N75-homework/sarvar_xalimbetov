@@ -61,7 +61,6 @@
           <h2 class="h4 mb-4">Students list</h2>
           <p class="count">Count: 0</p>
         </div>
-        <p class="text-end">Average mark: 65%</p>
 
         <table id="students-table" class="table table-striped align-middle">
           <thead class="align-middle">
@@ -76,7 +75,7 @@
             </tr>
           </thead>
           <tbody id="students-table-body">
-
+            <ul class="list" id="list"></ul>
           </tbody>
         </table>
       </section>
@@ -102,7 +101,7 @@
             </div>
             <div class="mb-3">
               <label for="mark" class="form-label">Mark</label>
-              <input type="number" min="0" max="150" class="form-control" id="mark" name="mark" required placeholder="150">
+              <input type="number" min="0" max="10  0" class="form-control" id="mark" name="mark" required placeholder="100">
             </div>
             <button type="submit" class="btn btn-primary d-block w-100 p-2" id="addBtn">Add student</button>
           </form>
@@ -130,16 +129,16 @@
             </div>
             <div class="mb-3">
               <label for="mark" class="form-label">Mark</label>
-              <input type="number" min="0" max="150" class="form-control" id="edit-mark" name="edit_mark" required placeholder="150">
+              <input type="number" min="0" max="100" class="form-control" id="edit-mark" name="edit_mark" required placeholder="100">
             </div>
-            <button type="submit" class="btn btn-primary d-block w-100 p-2">Edit student</button>
+            <button type="submit" name="edit_Btn" class="btn btn-primary d-block w-100 p-2">Edit student</button>
           </form>
         </div>
       </div>
     </div>
   </div>
 
-  <ul class="list" id="list"></ul>
+  
   <img src="https://libertyfoods.ca/themes/jswebstore/assets/img/404.png" id="error" class="error">
   
 
