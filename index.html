@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+        integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/index.js" defer type="module"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Pokemon</title>
+</head>
+
+<body>
+    <div class="container">
+        <img src="./img/logo.png" alt="pokemon logo" class="logo" id="logo">
+        <button class="like" id="likeBtn">
+            <i class="fa-regular fa-heart fa-xl"></i>
+        </button>
+
+        <form class="form" id="form">
+            <select id="type_select" class="type_select"></select>
+            <input type="text" class="search" id="search_input" placeholder="Search...">
+            <i class="fa-solid fa-magnifying-glass search_icon"></i>
+            <select name="" id="filter_select" class="filter_select"></select>
+        </form>
+        
+
+        <ul class="list" id="list">
+            <span class="loading">Loading...</span>
+        </ul>
+    </div>
+    <!-- <div class="modal">
+        <div class="modal_content">
+            <i class="fa-solid fa-angle-right fa-lg modal_close"></i>
+
+            <ul class="modal_list" id="modal_list">
+                <span class="modalDefault">No item</span>
+                <li class="modal_item" id="modal_Item">
+                    <div class="modal-img_box">
+                        <img src='${data.img}' alt="" class="modal-item_img">
+                    </div>
+                    <div class="modal-info_box">
+                        <div class="modal-name_box">
+                            <h1>Asd</h1>
+                            <button class="modal-like_icon"><i class="fa-solid fa-heart fa-xl"></i></button>
+                        </div>
+                        <div class="modal-type_box">
+                            <p>qwe</p>
+                        </div>
+                        <div class="modal-number_info">
+                            <p>12</p>
+                            <p>23 age</p>
+                        </div>
+                    </div>
+                </li>
+                
+                
+            </ul>
+        </div>
+    </div> -->
+</body>
+
+</html>

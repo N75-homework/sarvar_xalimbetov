@@ -1,0 +1,6 @@
+export const _list = document.getElementById("list")
+export const _typeSelect = document.getElementById("type_select")
+export const _selectType= document.getElementById('type_select')
+export const _selectFilt= document.getElementById('filter_select')
+export const _search= document.getElementById('search_input')
+export const _likeBtn= document.getElementById('likeBtn')
